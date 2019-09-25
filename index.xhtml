@@ -10,10 +10,10 @@
 		<h:messages />
 		<h:panelGrid columns="2">
 			<h:outputText value="Nome:"/>
-			<h:inputText value="#{loginController.usuario.name}" required="true" label="Nome"/>
+			<h:inputText value="#{userController.user.username}" required="true" label="Nome"/>
 			<h:outputText value="Senha:" />
-			<h:inputSecret value="#{loginController.usuario.senha}" required="true" label="Senha"/>
-			<h:commandButton action="#{loginController.login()}" value="Login" />
+			<h:inputSecret value="#{userController.user.password}" required="true" label="Senha"/>
+			<h:commandButton action="#{userController.save()}" value="Salvar" />
 		</h:panelGrid>	
 	</h:form> 
 </h:body> 
